@@ -1,0 +1,102 @@
+/*Encabezado*/
+header{
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 25px -22px black;
+    z-index: 10;
+}
+
+.header-content{
+    width: 100%;
+}
+
+.logo{
+    width: 20%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    margin-left: 26px;
+}
+.menu {
+    width: 40%;
+    align-items: center;
+    justify-content: end;
+}
+
+.menu nav{
+    width: 90%;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #ee5601;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a{
+    font-family: "bundaycleanregular";
+    color: #000000;
+    font-size: 18px;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover{
+    color: #ee5601;
+}
+
+.menu .text-menu-selected{
+    color: #ff7c14;
+}
+
+.menu nav ul li a i{
+    display: none;
+}
+
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 40px;
+    top: 16px;
+    padding: 10px;
+    font-size: 20px;
+    background: #eeeeeefa;
+    border-radius: 100%;
+    color: #787878;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#icon-menu:hover{
+    opacity: 0.8;
+}
